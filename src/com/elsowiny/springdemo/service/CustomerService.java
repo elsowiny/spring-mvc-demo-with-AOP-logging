@@ -1,11 +1,10 @@
-package com.elsowiny.springdemo.dao;
+package com.elsowiny.springdemo.service;
 
 import java.util.List;
 
 import com.elsowiny.springdemo.entity.Customer;
 
-public interface CustomerDAO {
-	
+public interface CustomerService {
 	public List<Customer> getCustomers();
 
 	public void saveCustomer(Customer theCustomer);
@@ -13,5 +12,4 @@ public interface CustomerDAO {
 	public Customer getCustomer(int theId);
 
 	public void deleteCustomer(int theId);
-
 }
